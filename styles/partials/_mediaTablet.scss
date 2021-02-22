@@ -1,0 +1,96 @@
+@media screen and (max-width: 1016px)
+{
+    .cont-blanco
+    {
+        flex-direction: column;
+        align-content: center;
+    }
+    .cont-azul
+    {
+        justify-content: center; 
+        width: 100%;
+        padding-bottom: 0px;
+        padding-top: 50px;
+        clip-path: polygon(0% 5%, 100% 0, 100% 95%, 0% 100%);
+    }
+
+    .titulo-negro-inicio
+    {
+        @extend #titulo-negro;
+        font-size: $tamano-titulo-negro-escritorio;
+    }
+
+    .contenedor-episodios
+    {
+        padding-bottom: 80px;
+
+
+        .episodios
+        {
+            display: flex;
+            flex-direction: column;
+            width: 298px;
+            height: 225px;
+            padding-left: 0px;
+        }
+        .titulo-blanco
+        {
+            display: flex;
+            justify-content: center;
+            font-size: $tamano-titulo-blanco-escritorio;
+            text-align: center;
+            padding-left: 0px;
+        }
+    }
+    
+
+    .titulo-negro
+    {
+        font-size: $tamano-titulo-negro-movil;
+    }
+    .parrafo
+    {
+        @extend #parrafo;
+        font-size: $tamano-parrafo-movil;
+    }
+
+    #boton
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 56px;
+        background-color: $color-verde;
+        margin-top: 50px;
+        font-size: $tamano-texto-boton-escritorio;
+        font-weight: bold;
+        &:hover
+        {   
+            background-image: linear-gradient(225deg, $color-principal 0%, $color-secundario 100%);
+        }
+    }
+
+    #titulo-blanco
+    {
+        color: white;
+        width: 100%;
+        padding-left: 150px;
+        padding-top: 50px;
+    }
+
+    #titulo-negro
+    {
+        color:$color-text;
+        width: 100%;
+        margin-top: 100px;
+    }
+    #parrafo
+    {
+        text-align: justify;
+        width: 470px;
+        height: auto;
+        // font-size: $tamano-parrafo-escritorio;
+        color: $color-text;
+        font-family: $fuente-secundaria;
+    }
+}

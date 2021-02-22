@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css " />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Mono' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <title>Podcast Channel</title>
+</head>
+<body>
+    <header id="header" class="header">
+        <a href="#inicio"><img src="./images/logo.svg" alt="logo" class="logo"/></a>
+        <nav>
+            <div class="menu">
+                <input type="checkbox" id="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul>
+                    <li><a href="#episodios">EPISODIOS</a></li>
+                    <li><a href="#nosotros">NOSOTROS</a></li>
+                    <li><a href="#entrevistas">ENTREVISTAS</a></li>
+                    <li><a href="#topicos">TÓPICOS</a></li>
+                </ul>
+            </div>
+        </nav>    
+    </header>
+    
+    <div class="cont-blanco contenedor-inicio" id="inicio">
+        <div>
+            <p class="titulo-negro-inicio">Hello <s>world</s>  pale blue dot<span class="punto-azul">.</span></p>
+            <p class="parrafo">El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
+            <div class="inicio-boton"><a>CONOCÉ MÁS</a></div>
+        </div>
+    </div>
+    
+    
+    <div class="cont-azul contenedor-episodios" id="episodios">
+        <p class="titulo-blanco">Episodios</p>
+        <iframe 
+        class="episodios"
+        src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" 
+        allow="encrypted-media"></iframe>
+
+        <iframe 
+        class="episodios"
+        src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" 
+        allow="encrypted-media"></iframe>
+
+        <iframe 
+        class="episodios" 
+        src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" 
+        allow="encrypted-media"></iframe>
+
+        <iframe 
+        class="episodios" 
+        src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" 
+        
+        allow="encrypted-media"></iframe>
+    </div>
+    <div id="nosotros" class="cont-blanco contenedor-donde-venimos">
+        <div>
+            <img src="./images/phone.png" alt="Phone" class="nosotros-imagen">
+        </div>
+        <div>
+            <p class="titulo-negro-donde-venimos">De dónde venimos</p>
+            <p class="parrafo nosotros-parrafo">Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. </p>
+            <p class="parrafo nosotros-parrafo">Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
+        </div>
+    </div>
+    <div id="entrevistas" class="cont-blanco contenedor-invitados">
+        <p class="titulo-negro-entrevista">Invitadas/os estelares</p>
+        <div class="entrevistas-imagenes">
+            <img class="entrevistas-imagen" src="./images/grace-hopper.png" alt="Grace Hopper">
+            <img class="entrevistas-imagen" src="./images/Katie-Bouman.png" alt="Katie Bouman">
+            <img class="entrevistas-imagen" src="./images/Margaret_Hamilton.png" alt="Margaret Hamilton">
+            <img class="entrevistas-imagen" src="./images/computer1950.png" alt="Computer 1950">
+            <img class="entrevistas-imagen" src="./images/firstprogrammablegeneral.png" alt="First Computer">
+            <img class="entrevistas-imagen" src="./images/susan-kare.png" alt="Susan Kare">
+        </div>
+    </div>
+
+    <div id="topicos" class="cont-blanco contenedor-topicos">
+        <p class="titulo-negro-topicos">Algunos de nuestros temas</p>
+        <div class="topicos-imagenes">
+            <div class="topicos-imagen">
+                <img class="" src="./images/icon1.svg" alt="Trabajo Remoto">
+                <p class="topico-titulo-imagen">Trabajo remoto</p>
+            </div>
+            <div class="topicos-imagen">
+                <img class="" src="./images/icon2.svg" alt="Repensando la Programación">
+                <p class="topico-titulo-imagen">Repensando la programación</p>
+            </div>
+            <div class="topicos-imagen">
+                <img class="" src="./images/icon3.svg" alt="Bases del Código">
+                <p class="topico-titulo-imagen">Bases del Código</p>
+            </div>
+            <div class="topicos-imagen">
+                <img class="" src="./images/icon4.svg" alt="Seguridad Informática">
+                <p class="topico-titulo-imagen">Seguridad Informática</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="cont-azul-final contenedor-novedades" id="novedades">
+        <p class="novedades-titulo-blanco">¿Querés las últimas novedades?</p>
+        <div class="novedades-boton"><a>Á LOS EPISODIOS</a></div>
+    </div>
+
+
+    <footer class="footer" id="footer">
+        <p class="footer-texto">© 2019— Hello blue pale dot </p>
+        <div class="contenedor-redes">
+            <a href="https://open.spotify.com/" target="blank"><i class="fab fa-spotify"></i></a>
+            <a href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/" target="blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://web.telegram.org/#/login" target="blank"><i class="fab fa-telegram"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

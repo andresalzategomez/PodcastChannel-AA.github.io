@@ -1,0 +1,530 @@
+@import "./partials/variables";
+@import "./partials/header";
+@import "./partials/contenedores";
+@import "./partials/footer";
+// @import "./partials/mediaTablet";
+// @import "./partials/mediaMovil";
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: $fuente-principal, sans-serif;
+}
+
+body
+{
+    max-width: 1440px;
+    margin: auto;
+    min-width: 320px;
+}
+
+.contenedor-inicio
+{
+    .titulo-negro-inicio
+    {
+        @extend #titulo-negro;
+        width: 100%;
+        font-size: $tamano-titulo-negro-escritorio;
+    }
+    .parrafo
+    {
+        @extend #parrafo;
+        width: 470px;
+        font-size: $tamano-parrafo-escritorio;
+    }
+    .punto-azul
+    {
+        color: $color-principal;
+    }
+    .inicio-boton
+    {
+        @extend #boton;
+        font-size: $tamano-texto-boton-escritorio;
+        width: 226px;
+    }
+}
+
+.contenedor-episodios
+{
+    display: flex;
+
+    .titulo-blanco
+    {
+        color: white;
+        width: 100%;
+        padding-left: 150px;
+        padding-top: 50px;
+        font-size: $tamano-titulo-blanco-escritorio;
+    }
+        
+    .episodios
+    {
+        display: flex;
+        width: 500px;
+        height: 232px;
+        padding-left: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.contenedor-donde-venimos
+{
+    display: flex;
+    justify-content: space-evenly;
+
+    .titulo-negro-donde-venimos
+    {
+        @extend #titulo-negro;
+        width: 100%;
+        font-size: $tamano-titulo-negro-escritorio;
+    }
+
+    .nosotros-parrafo
+    {
+        @extend #parrafo;
+        width: 470px;
+        margin-top: 20px;
+    }
+
+    .nosotros-imagen
+    {
+        display: flex;
+        position: relative;
+        bottom: 100px;
+        width: auto;
+        height: 660px;
+    }
+}
+
+
+
+.contenedor-invitados
+{
+    display: flex;
+    
+    .titulo-negro-entrevista
+    {
+        color:$color-text;
+        width: 100%;
+        padding-left: 150px;
+        font-size: $tamano-titulo-negro-escritorio;
+        margin-top: 100px;
+        color: $color-text; 
+    }
+    .entrevistas-imagenes
+    {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+            
+        .entrevistas-imagen
+        {
+            display: flex;
+            justify-content: space-around;
+            width: 33.3%;
+        }    
+    }
+}
+
+
+.contenedor-topicos
+{
+    display: flex;
+
+    .titulo-negro-topicos
+    {
+        color:$color-text;
+        width: 100%;
+        padding-left: 150px;
+        font-size: $tamano-titulo-negro-escritorio;
+        margin-top: 100px;
+        color: $color-text; 
+    }
+    .topicos-imagenes
+    {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        width: 80%;
+        margin-top: 60px;
+
+        .topicos-imagen
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            
+            img
+            {
+                width: 104px;
+                height: 104px;
+            }
+            
+            .topico-titulo-imagen
+            {
+                font-weight: bold;
+                margin-top: 20px;
+                width: 180px;
+                text-align: center;
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+.contenedor-novedades
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+    .novedades-titulo-blanco
+    {
+        color: white;
+        font-size: $tamano-titulo-blanco-escritorio;
+        :hover
+        {
+            background-color: linear-gradient(225deg, $color-principal 0%, $color-secundario 100%);
+        }
+    }
+
+    .novedades-boton
+    {
+        width: 345px;
+        @extend #boton;
+        
+    }
+}
+
+//************************************************************************************************************
+//***************************************** Media Query TABLET ***********************************************
+//************************************************************************************************************
+@media screen and (max-width: 1016px)
+{
+   .cont-azul
+    {
+        justify-content: center; 
+        width: 100%;
+        padding-bottom: 0px;
+        padding-top: 50px;
+        clip-path: polygon(0% 5%, 100% 0, 100% 95%, 0% 100%);
+    }
+    .contenedor-inicio
+    {
+        .titulo-negro-inicio
+        {
+            font-size: $tamano-titulo-inicio-tablet;
+        }
+
+        .inicio-boton
+        {
+            font-size: $tamano-texto-boton-tablet;
+            width: 90%;
+        }
+    }
+    .contenedor-episodios
+    {
+        padding-bottom: 80px;
+        flex-direction: column;
+        align-items: center;
+
+        .titulo-blanco
+        {
+            font-size: $tamano-titulo-blanco-tablet;
+            padding-left: 5%;
+        }
+        .episodios
+        {
+            width: 90%;
+            height: 225px;
+        }
+        
+    }
+
+    .contenedor-donde-venimos
+    {
+        justify-content: center;
+        align-items: center;
+        
+        .titulo-negro-donde-venimos
+        {
+            font-size: $tamano-titulo-negro-tablet;
+            position: relative;
+            bottom: 150px;
+            text-align: center;
+            margin-top: 0px;
+        }
+
+        .nosotros-parrafo
+        {
+            font-size: $tamano-parrafo-tablet;
+            margin-top: 0px;
+            position: relative;
+            bottom: 150px;
+            width: 90%;
+            text-align: center;
+            margin: auto;
+        }
+
+    }
+
+    .contenedor-invitados
+    {
+        .titulo-negro-entrevista
+        {
+            font-size: $tamano-titulo-negro-tablet;
+            margin-top: 0px;
+            padding-left: 0px;
+            text-align: center;
+            color: $color-text; 
+        }
+    }
+    
+    .contenedor-topicos
+    {
+        .titulo-negro-topicos
+        {
+            padding-left: 0px;
+            text-align: center;
+            font-size: $tamano-titulo-negro-tablet;
+        }
+        .topicos-imagenes
+        {
+            width: 90%;
+        }
+    }
+
+    .contenedor-novedades
+    {
+        .novedades-titulo-blanco
+        {
+            font-size: $tamano-titulo-blanco-tablet
+        }
+
+        .novedades-boton
+        {
+            font-size: $tamano-texto-boton-tablet;
+        }
+    }
+}
+
+
+
+//************************************************************************************************************
+//****************************************** Media Query MOVIL ***********************************************
+//************************************************************************************************************
+
+@media screen and (max-width: 700px)
+{
+    .contenedor-inicio
+    {  
+        flex-direction: column;
+        align-items: center;
+        .titulo-negro-inicio
+        {
+            width: 250px;
+            font-size: $tamano-titulo-inicio-movil;
+            margin-left: 5%;
+        }
+        .parrafo
+        {
+            width: 90%;
+            font-size: $tamano-parrafo-movil;
+            text-align: center;
+            margin-left: 5%;
+        }
+
+        .inicio-boton
+        {
+            font-size: $tamano-texto-boton-movil;
+            width: 90%;
+            margin-left: 5%;
+        }
+    }
+
+    .contenedor-episodios
+    {
+        align-items: flex-start;
+
+        .episodios
+        {
+            height: 225px;
+        }
+
+        .titulo-blanco
+        {
+            font-size: $tamano-titulo-blanco-movil;
+        }        
+    }
+
+    .contenedor-donde-venimos
+    {
+        justify-content: center;
+        align-items: flex-start;
+        
+        .titulo-negro-donde-venimos
+        {
+            font-size: $tamano-titulo-negro-movil;
+            width: 200px;
+            text-align: left;
+            padding-left: 5%;
+            margin-top: 0px;
+        }
+
+        .nosotros-parrafo
+        {
+            font-size: $tamano-parrafo-movil;
+            margin-top: 0px;
+            position: relative;
+            bottom: 150px;
+            width: 90%;
+        }
+        .nosotros-imagen
+        {
+            width: 90%;
+            margin-left: 5%;
+        }
+
+    }
+
+    .contenedor-invitados
+    {
+        justify-content: start;
+        .titulo-negro-entrevista
+        {
+            font-size: $tamano-titulo-negro-movil;
+            width: 300px;
+            padding-left: 5%;
+            text-align: left;
+            margin-left: 0px;
+        }
+        .entrevistas-imagenes
+        {
+            .entrevistas-imagen
+            {
+                width: 100%;
+            }    
+        }
+    }
+
+    .contenedor-topicos
+    {
+        display: flex;
+        flex-direction: column;
+    
+        .titulo-negro-topicos
+        {
+            color:$color-text;
+            width: 300px;
+            padding-left: 5%;
+            text-align: left;
+            font-size: $tamano-titulo-negro-movil;
+            margin-top: 100px;
+            color: $color-text; 
+        }
+        .topicos-imagenes
+        {
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin-top: 60px;
+    
+            .topicos-imagen
+            {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-bottom: 50px;
+                
+                .topico-titulo-imagen
+                {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .contenedor-novedades
+    {
+        .novedades-titulo-blanco
+        {
+            font-size: $tamano-titulo-blanco-movil;
+            width: 200px;
+            text-align: center;
+        }
+
+        .novedades-boton
+        {
+            font-size: $tamano-texto-boton-movil;
+            width: 90%;
+        }
+    }
+
+    .footer
+    {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 60px;
+
+        .footer-texto
+        {
+            width: 80%;
+            text-align: center;
+            margin-left: 0px;
+            line-height: 22px;
+        }
+
+        .contenedor-redes
+        {
+            width: 80%;
+            // align-items: center;
+            margin-right: 0px;
+            width: 80%;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+//************************************************************************************************************
+//********************************************** Modulos *****************************************************
+//************************************************************************************************************
+#boton
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    background-color: $color-verde;
+    margin-top: 50px;
+    font-weight: bold;
+    &:hover
+    {   
+        background-image: linear-gradient(225deg, $color-principal 0%, $color-secundario 100%);
+    }
+}
+
+#titulo-negro
+{
+    color:$color-text;
+    margin-top: 100px;
+}
+#parrafo
+{
+    text-align: justify;
+    height: auto;
+    color: $color-text;
+    font-family: $fuente-secundaria;
+}

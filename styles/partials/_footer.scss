@@ -1,0 +1,23 @@
+.footer
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+
+    .footer-texto
+    {
+        font-family: $fuente-secundaria;
+        font-size: 16px;
+        margin-left: 50px;
+    }
+
+    .contenedor-redes
+    {
+        display: flex;
+        justify-content: space-evenly;
+        margin-right: 50px;
+        font-size: 18px;
+        width: 20%;
+    }
+}
